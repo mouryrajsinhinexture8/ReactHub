@@ -1,10 +1,12 @@
-import Navbar from "../components/Navbar";
-function LandingPage()
-{
-    return(
-        <>
-            
-        </>
-    )
+import Hero from "../components/LandingComponents/Hero";
+
+function Landing() {
+  return (
+    <>
+      <Hero />
+      {/* Future sections go here */}
+    </>
+  );
 }
-export default LandingPage;
+
+export default Landing;
