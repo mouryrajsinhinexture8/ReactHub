@@ -1,10 +1,11 @@
 import Hero from "../components/LandingComponents/Hero";
+import TrendingComponent from "../components/LandingComponents/TrendingComponent";
 
 function Landing() {
   return (
     <>
       <Hero />
-      {/* Future sections go here */}
+      <TrendingComponent />
     </>
   );
 }
