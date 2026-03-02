@@ -1,11 +1,22 @@
-import React from 'react'
+// import 
 
-function App() {
+import LandingPage from "./pages/Landing";
+import Navbar from "./components/Navbar";
+
+function App() 
+{
   return (
     <>
-      <h1>Hello, React Project is here</h1>
+      <Navbar/>
+      {/* <h1 className="text-4xl font-bold text-blue-500">
+        Tailwind v4 Working 🚀
+      </h1> */}
+        
+      <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white flex items-center justify-center">
+  DARK MODE TEST
+</div>
+      <LandingPage/>
     </>
-  )
+  );
 }
-
-export default App
+export default App;
