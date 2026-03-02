@@ -1,0 +1,27 @@
+.featuresWrapper {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.featureCard {
+  transition: transform 0.25s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+}
+
+.iconBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+
+  background: rgba(139, 92, 246, 0.12);
+  color: #8b5cf6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

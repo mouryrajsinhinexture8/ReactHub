@@ -71,7 +71,7 @@ function TrendingComponent()
     }, []);
 
     return (
-        <section className="max-w-6xl mx-auto px-6 py-20">
+        <section className="mx-auto px-20 py-20">
 
         {/* Header */}
         <div className="flex justify-between items-center mb-12">
