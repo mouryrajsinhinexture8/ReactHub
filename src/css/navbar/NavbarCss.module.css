@@ -3,25 +3,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    /* default (light) */
-    background-color: #ffffff;
-    border-bottom: 1px solid rgba(16, 24, 40, 0.08);
+
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-primary);
 }
 
-/* dark mode overrides when the .dark class is present on <html> */
-:global(.dark) .mainLayout {
-    background-color: #0b0b0f;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* Left section */
 .leftSection {
     display: flex;
     align-items: center;
     gap: 0.6rem;
 }
 
-/* Center navigation */
 .centerSection {
     display: flex;
     align-items: center;
@@ -29,24 +21,15 @@
 }
 
 .centerSection span {
-    color: #213547; /* text for light */
+    color: var(--text-primary);
     cursor: pointer;
     font-weight: 500;
-    transition: color 0.2s ease;
 }
 
 .centerSection span:hover {
-    color: #111827;
+    opacity: 0.8;
 }
 
-:global(.dark) .centerSection span {
-    color: #cfcfcf;
-}
-:global(.dark) .centerSection span:hover {
-    color: white;
-}
-
-/* Right section */
 .rightSection {
     display: flex;
     align-items: center;
@@ -54,28 +37,21 @@
 }
 
 .loginText {
-    color: #213547;
+    color: var(--text-primary);
     cursor: pointer;
     font-weight: 500;
 }
 
 .loginText:hover {
-    color: #111827;
-}
-
-:global(.dark) .loginText {
-    color: #cfcfcf;
-}
-:global(.dark) .loginText:hover {
-    color: white;
+    opacity: 0.8;
 }
 
 .signUpBtn {
     padding: 0.4rem 0.9rem;
     border-radius: 8px;
     border: none;
-    background-color: white;
-    color: black;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
     font-weight: 600;
     cursor: pointer;
 }
@@ -86,13 +62,8 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: #111827;
+    color: var(--text-primary);
 }
-
-:global(.dark) .themeBtn {
-    color: white;
-}
-
 
 @media (max-width: 768px) {
     .centerSection {
