@@ -10,6 +10,33 @@ type ComponentItem = {
   comments: number;
 };
 
+
+/*
+    as of now there was nothing stored in localstorage i added this in localstorage via console: 
+
+    localStorage.setItem(
+        "components",
+        JSON.stringify([
+            {
+            id: "1",
+            title: "Animated Button",
+            description: "Smooth hover animation",
+            category: "Buttons",
+            likes: 245,
+            comments: 32,
+            },
+            {
+            id: "2",
+            title: "Modal Dialog",
+            description: "Accessible modal component",
+            category: "Overlays",
+            likes: 156,
+            comments: 19,
+            }
+        ])
+    );
+*/
+
 function TrendingComponent() 
 {
     const [trending, setTrending] = useState<ComponentItem[]>([]);
